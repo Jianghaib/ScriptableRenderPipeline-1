@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed an issue where camera stacking didn't work properly inside prefab mode. [case 1220509](https://issuetracker.unity3d.com/issues/urp-cannot-assign-overlay-cameras-to-a-camera-stack-while-in-prefab-mode)
 - Fixed NaNs in tonemap algorithms (neutral and ACES) on Nintendo Switch.
 - Fixed an issue with shadow cascade values were not readable in the render pipeline asset [case 1219003](https://issuetracker.unity3d.com/issues/urp-cascade-values-truncated-on-selecting-two-or-four-cascades-in-shadows-under-universalrenderpipelineasset)
+- Fixed the definition of `mad()` in SMAA shader for OpenGL.
 
 ## [7.2.0] - 2020-02-10
 
