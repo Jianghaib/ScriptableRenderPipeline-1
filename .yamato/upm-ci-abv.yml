@@ -55,12 +55,7 @@ all_project_ci_{{ editor.version }}:
         - "**/test-results/**"
   {% if editor.version == "fast-2020.1" %}
   triggers:
-    expression: |
-        pull_request.((target eq "master" OR target match "*/release") AND
-                      NOT pull_request.draft AND
-                      NOT push.changes.all match ["**/*.md",
-                                                  "doc/**/*",
-                                                  "**/Documentation*/**/*"])
+    expression: pull_request.target eq "master" AND NOT pull_request.draft AND NOT push.changes.all match "docs/**"
   {% endif %}
 {% endfor %}
 
