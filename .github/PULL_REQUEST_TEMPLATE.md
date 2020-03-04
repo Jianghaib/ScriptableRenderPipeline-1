@@ -1,9 +1,4 @@
-### Please read
-**PR workflow guidelines**
-* SRP ABV will start automatically when you open your PR
-* Consider making use of **draft PRs** if you are not 100% sure that your PR is ready for review
-* ABV will restart if you add a new commit to a branch with an open PR 
-* Changes to docs and md files will not trigger jobs 
+**DONT FORGET TO ADD A CHANGELOG**
 
 ### Checklist for PR maker
 - [ ] Have you added a backport label (if needed)? For example, the `need-backport-2019.3` label. After you backport the PR, the label changes to `backported-2019.3`.

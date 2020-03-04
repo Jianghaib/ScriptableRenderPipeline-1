@@ -56,7 +56,7 @@ all_project_ci_{{ editor.version }}:
   {% if editor.version == "fast-2020.1" %}
   #run trigger for non-draft PRs that are not docs
   triggers:
-    expression: pull_request.target eq "master" AND NOT pull_request.draft AND NOT pull_request.push.changes.all match "docs/**"
+    expression: pull_request.target eq "master" AND NOT pull_request.draft AND NOT pull_request.push.changes.all match ["**/*.md", "doc/**/*", "**/Documentation*/**/*"]
   {% endif %}
 {% endfor %}
 
