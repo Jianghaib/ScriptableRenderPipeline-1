@@ -53,13 +53,6 @@ all_project_ci_{{ editor.version }}:
     logs:
       paths:
         - "**/test-results/**"
-  {% if editor.version == "fast-2020.1" %}
-  triggers:
-    branches:
-      only:
-        - trying
-        - staging
-  {% endif %}
 {% endfor %}
 
 
